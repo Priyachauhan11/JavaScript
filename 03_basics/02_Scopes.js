@@ -8,12 +8,46 @@ if (true){
     console.log("inner: ", a);
     
 }
-
-for (let index = 0; index < array.length; index++) {
-    const element = array[index];
-    
-}
-
 console.log(a);
 // console.log(b);
 // console.log(c);
+
+function one(){
+    const username = "priya"
+
+    function Two(){
+        const website = "youtube"
+        console.log(username);    
+    }
+    // console.log(website);
+    
+    Two()
+}
+
+// one()
+
+if (true){
+    const username = "prateek"
+    if(username === "prateek"){
+        const website = "youtube"
+        console.log(username + website);
+    }
+    // console.log(website);
+}
+// console.log(username);
+
+// ++++++++++++++++++interesting+++++++++++++++++++
+
+addOne(5) //does not give error
+function addOne(value){
+    return value + 1
+}
+// addOne(5)
+
+
+// concept of hosting
+// addTwo(5)   //give error
+const addTwo = function(value){
+    return value + 2
+}
+addTwo(5)
